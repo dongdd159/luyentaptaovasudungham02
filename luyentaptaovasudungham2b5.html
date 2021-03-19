@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function searchmin(num1,num2,num3){
+        let min=num1
+        if (min>num2){
+            min=num2
+            if (min>num3){
+                min=num3
+            }
+        }else if (min>num3){
+            min=num3
+            if (min>num2){
+                min=num2
+            }
+        }
+        return min
+    }
+    let input1=parseInt(prompt("nhập 1 số"))
+    let input2=parseInt(prompt("nhập 1 số"))
+    let input3=parseInt(prompt("nhập 1 số"))
+    let result = searchmin(input1,input2,input3)
+    alert(result)
+</script>
+</body>
+</html>

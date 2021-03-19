@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function factorial(num){
+        let n=1
+        let de=num
+        for (let i=0;i<num;i++){
+            n = n * de
+            de--
+        }
+        return n
+    }
+    let input = parseInt(prompt("nhập 1 số"))
+    let result = factorial(input)
+    alert(result)
+</script>
+</body>
+</html>
